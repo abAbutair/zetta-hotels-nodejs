@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %>
+
+<body>
+<!-- Header -->
+<%- include('./partials/header.ejs') %>
+<!-- End of Header -->
+
+<main>
+    <%- include('./partials/internal_header.ejs') %>
+
+    <section class="section section--padding">
+        <div class="container">
+            <div class="location-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46461.820406639825!2d31.225438695581065!3d30.057064191888802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2sCairo%2C%20Cairo%20Governorate!5e0!3m2!1sen!2seg!4v1607053340395!5m2!1sen!2seg" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </section>
+    <section class="section section--padding">
+        <div class="container">
+            <h6 class="sub-title">Contact</h6>
+            <h2 class="section-title"><span>Contact us to get</span> free support</h2>
+            <form action="" class="form form--contact-us">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="form__el h-100">
+                            <textarea type="text" class="textarea" placeholder="description"></textarea>
+                            <div class="invalid-tooltip">Please pick a check in date.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form__el">
+                            <input type="text" class="input" placeholder="subject">
+                            <div class="invalid-tooltip">please enter the number of rooms.</div>
+                        </div>
+                        <div class="form__el">
+                            <input type="text" class="input" placeholder="name / surname">
+                            <div class="invalid-tooltip">please enter the number of rooms.</div>
+                        </div>
+                        <div class="form__el">
+                            <input type="email" class="input" placeholder="email">
+                            <div class="invalid-tooltip">please enter the number of rooms.</div>
+                        </div>
+                        <div class="form__el form__btn">
+                            <button type="button" class="btn btn--default btn--regular w-100">
+                               send <i class="far fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="contacts">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="contacts__block">
+                            <div class="contacts__block__img">
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <h5 class="primary-title">Email</h5>
+                            <a href="mailto:" class="link-primary">example@yahoo.com</a>
+                            <a href="mailto:" class="link-primary">exampleemail2@yahoo.com</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="contacts__block">
+                            <div class="contacts__block__img">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <h5 class="primary-title">phone</h5>
+                            <a href="tel:" class="link-primary">+0 320 422 4254</a>
+                            <a href="mailto:" class="link-primary">+0 342 552 523</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="contacts__block">
+                            <div class="contacts__block__img">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h5 class="primary-title">location</h5>
+                            <p>Main Str Chicago Ilinois</p>
+                            <p>Main Street New York City</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <%- include('./partials/footer_top.ejs') %>
+
+    <%- include('./partials/footer.ejs') %>
+</footer>
+<!-- End of Footer -->
+
+<%- include('./partials/init_scripts.ejs') %>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!-- core scripts -->
+<script src="/jquery/dist/jquery.min.js"></script>
+<script src="/popper.js/dist/umd/popper.min.js"></script>
+<script src="/daterangepicker/moment.min.js"></script>
+
+<!-- Custom bootstrap scripts -->
+<script src="/bootstrap/js/dist/util.js"></script>
+<script src="/bootstrap/js/dist/dropdown.js"></script>
+<script src="/bootstrap/js/dist/carousel.js"></script>
+
+<!-- Page plugins scripts -->
+<!--<script src="/select2/dist/js/select2.full.min.js"></script>-->
+<script src="/daterangepicker/daterangepicker.js"></script>
+<script src="/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="/wowjs/dist/wow.min.js"></script>
+
+<!-- init scripts -->
+<script>
+    $(function () {
+        $('input[name="datePicker"]').daterangepicker({
+            singleDatePicker: true,
+            autoApply: true,
+            autoUpdateInput: false
+        });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $(".owl-carousel--type1").owlCarousel({
+            nav: true,
+            dots: false,
+            items: 4,
+            margin: 15,
+            // animateOut: 'slideOutDown',
+            // animateIn:'flipInX'
+        });
+        $(".owl-carousel--type2").owlCarousel({
+            nav: true,
+            dots: false,
+            items: 5,
+            margin: 0,
+            // animateOut: 'slideOutDown',
+            // animateIn:'flipInX'
+        });
+    });
+</script>
+
+<script>
+    new WOW().init();
+</script>
+
+<script type="text/javascript">
+    var carousel1 = $('#forControls02').carousel();
+    var carousel2 = $('#forControls03').carousel();
+    carousel1.on('slide.bs.carousel', function (event) {
+        var to = $(event.relatedTarget).index();
+        carousel2.carousel(to);
+    });
+</script>
+
+<!-- Main scripts -->
+<script src="/js/mainScript.js"></script>
